@@ -100,10 +100,10 @@ def handle_message(data):
         emit("respuesta", {"respuesta": "❌ No entendí el mensaje. Intenta de nuevo."})
         return
 
-     🔹 Convertir el mensaje en un vector numérico antes de predecir
+     #🔹 Convertir el mensaje en un vector numérico antes de predecir
     mensaje_vectorizado = vectorizer.transform([mensaje])
 
-     🔹 Predecir la respuesta
+     #🔹 Predecir la respuesta
     respuesta = modelo.predict(mensaje_vectorizado)[0]
     print(f"Respuesta enviada: {respuesta}")
 
