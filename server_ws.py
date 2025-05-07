@@ -81,7 +81,7 @@ from flask import Flask
 from flask_socketio import SocketIO, emit
 import pickle
 
- Cargar el modelo y el vectorizador
+#Cargar el modelo y el vectorizador
 with open("modelo.pkl", "rb") as model_file:
     modelo = pickle.load(model_file)
 
